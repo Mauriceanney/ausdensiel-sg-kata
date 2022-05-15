@@ -1,4 +1,4 @@
-## Simple Bank account kata
+## Simple Bank com.audensiel.kata.sg.domain.account kata
 #### By Maurice Aney  ---  [Linkedine Profile](https://www.linkedin.com/in/maurice-aney-a04b14184/)
 
 
@@ -12,15 +12,15 @@ Simple Banck Account Managment  kata for
 ##### User Storie 1:
 In order to save money
 As a** bank client
-I want to make a deposit in my account
+I want to make a deposit in my com.audensiel.kata.sg.domain.account
 
 ##### User Storie 2:
 In order to retrieve some or all of my savings
 As a bank client
-I want to make a withdrawal from my account
+I want to make a withdrawal from my com.audensiel.kata.sg.domain.account
 
 ##### User Storie 3:
 In order to check my operations
 As a bank client
-I want to see the history (operation, date, amount, balance)  of my operations
+I want to see the history (com.audensiel.kata.sg.domain.com.audensiel.kata.sg.domain.account.com.audensiel.kata.sg.domain.account, date, amount, balance)  of my operations
 

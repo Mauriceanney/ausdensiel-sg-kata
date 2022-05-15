@@ -12,7 +12,7 @@
     <artifactId>interview</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>interview</name>
-    <description>simple bank account management kata</description>
+    <description>simple bank com.audensiel.kata.sg.domain.account management kata</description>
     <properties>
         <java.version>11</java.version>
     </properties>
