@@ -13,7 +13,6 @@ import static org.junit.Assert.assertNotEquals;
 
 /**
  * @author Maurice Aney
- * @date 16/05/2022 03:49
  */
 public class OperationTest {
     private Account account;
@@ -37,13 +36,8 @@ public class OperationTest {
         operationList.add(operation2);
 
         assertThat(operationList).isEqualTo(accountOperations);
-        assertThat(operation1.getBalance()).isEqualTo(accountOperations.get(0).getBalance());
-        assertThat(operation1.getAmount()).isEqualTo(accountOperations.get(0).getAmount());
-        assertThat(operation1.getOperationsTypes()).isEqualTo(accountOperations.get(0).getOperationsTypes());
-        assertThat(operation1.getDate()).isEqualTo(accountOperations.get(0).getDate());
         assertThat(operation1).isEqualTo(accountOperations.get(0));
         assertThat(operation2).isEqualTo(accountOperations.get(1));
         assertNotEquals(operation1, operation2);
-        assertNotEquals(account.getOperations().get(1), operation1);
     }
 }
