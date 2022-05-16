@@ -13,10 +13,10 @@ public interface  AccountService {
     /**
      * Make a Deposits to account.
      *
-     * @param account com.audensiel.kata.domain.operation account
-     * @param depositAmount deposit com.audensiel.kata.domain.operation amount
+     * @param account account
+     * @param depositAmount deposit operation amount
      *
-     * @return com.audensiel.kata.domain.operation account
+     * @return operation account
      * @throws OverdrawnBalanceException if deposit amount  is negative
      */
     Account deposit(Account account, BigDecimal depositAmount) throws OverdrawnBalanceException;
@@ -24,12 +24,12 @@ public interface  AccountService {
     /**
      * Withdraws from account.
      *
-     * @param account the account for which the com.audensiel.kata.domain.operation is requested
+     * @param account the account for which the operation is requested
      * @param amount the amount of money to withdraw
      *
-     * @return the account of the current com.audensiel.kata.domain.operation
+     * @return the account of the current operation
      * @throws OverdrawnBalanceException    if the amount to withdraw is negative
-     * @throws InsufficientFundException if the account doesn't have enough funds for the com.audensiel.kata.domain.operation
+     * @throws InsufficientFundException if the account doesn't have enough funds for the operation
      */
     Account withdraw(Account account, BigDecimal amount) throws OverdrawnBalanceException, InsufficientFundException;
 }

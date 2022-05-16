@@ -13,9 +13,9 @@ public class AccountServiceImpl implements AccountService{
     /**
      * Make a Deposits to account.
      *
-     * @param account       com.audensiel.kata.domain.operation account
-     * @param depositAmount deposit com.audensiel.kata.domain.operation amount
-     * @return com.audensiel.kata.domain.operation account
+     * @param account operation account
+     * @param depositAmount deposit operation amount
+     * @return operation account
      * @throws OverdrawnBalanceException if deposit amount  is negative
      */
     @Override
@@ -26,11 +26,11 @@ public class AccountServiceImpl implements AccountService{
     /**
      * Withdraws from account.
      *
-     * @param account the account for which the com.audensiel.kata.domain.operation is requested
+     * @param account the account for which the operation is requested
      * @param withdrawAmount  withdraw amount
-     * @return the account of the current com.audensiel.kata.domain.operation
+     * @return the account of the current operation
      * @throws OverdrawnBalanceException if the amount to withdraw is negative
-     * @throws InsufficientFundException if the account doesn't have enough funds for the com.audensiel.kata.domain.operation
+     * @throws InsufficientFundException if the account doesn't have enough funds for the operation
      */
     @Override
     public Account withdraw(Account account, BigDecimal withdrawAmount) throws OverdrawnBalanceException, InsufficientFundException {

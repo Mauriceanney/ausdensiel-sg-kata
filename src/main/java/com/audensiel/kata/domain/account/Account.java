@@ -34,7 +34,7 @@ public class Account {
     }
 
     /**
-     * Make a deposit and log com.audensiel.kata.domain.operation.
+     * Make a deposit and log operation.
      *
      * @param amount the amount to be deposited
      * @return current account
@@ -49,7 +49,7 @@ public class Account {
 
     /**
      * Withdraws funds from account if it has enough funds, and the supplied amount is positive.
-     * Saves com.audensiel.kata.domain.operation in the account operations.
+     * Saves operation in the account operations.
      *
      * @param amount the amount of money to withdraw
      * @return the current account
@@ -69,7 +69,7 @@ public class Account {
     private static class AccountUtils {
 
         /**
-         * Check if current transaction amount is positive or not.
+         * Check if  account have sufficient fund or not.
          *
          * @param transactionAmount transaction amount to be checked
          * @throws InsufficientFundException if account have insufficient fund
@@ -89,11 +89,11 @@ public class Account {
         }
 
         /**
-         * Adds the requested com.audensiel.kata.domain.operation with the amount to the operations history.
+         * Adds the requested operation with the amount to the operations history.
          *
          * @param transactionAmount the amount of money to validate
          * @param balance account balance
-         * @param operationsTypes type of com.audensiel.kata.domain.operation to be added
+         * @param operationsTypes type of operation to be added
          * @param operations account operations list
          */
         private static void addOperation(OperationsTypes operationsTypes,BigDecimal transactionAmount, BigDecimal balance, List<Operation> operations) {
