@@ -22,5 +22,5 @@ I want to make a withdrawal from my account
 ##### User Storie 3:
 In order to check my operations
 As a bank client
-I want to see the history (account, date, amount, balance)  of my operations
+I want to see the history (operation, date, amount, balance)  of my operations
 
