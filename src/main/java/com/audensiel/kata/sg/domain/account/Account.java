@@ -8,13 +8,13 @@ import com.audensiel.kata.sg.exceptions.OverdrawnBalanceException;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static java.util.Objects.requireNonNull;
 
 /**
  * @author Maurice Aney
- * @date 15/05/2022 22:31
  */
 @Getter
 @Setter
@@ -75,7 +75,7 @@ public class Account {
          * @throws InsufficientFundException if account have insufficient fund
          */
         private static void checkFund(BigDecimal transactionAmount, BigDecimal balance) {
-            if (balance.compareTo(transactionAmount) <= 0) throw new InsufficientFundException();
+            if (balance.compareTo(transactionAmount) < 0) throw new InsufficientFundException();
         }
 
         /**
@@ -85,7 +85,7 @@ public class Account {
          * @throws OverdrawnBalanceException if withdraw operation transactionAmount is negative
          */
         private static void checkTransactionAmountNegativity(BigDecimal transactionAmount) {
-            if (transactionAmount.compareTo(BigDecimal.ZERO) < 0) throw new OverdrawnBalanceException();
+            if (transactionAmount.compareTo(BigDecimal.ZERO) <= 0) throw new OverdrawnBalanceException();
         }
 
         /**
@@ -101,6 +101,7 @@ public class Account {
                     .operationsTypes(operationsTypes)
                     .amount(transactionAmount)
                     .balance(balance)
+                    .date(LocalDateTime.now())
                     .build();
             operations.add(operation);
         }
