@@ -11,7 +11,7 @@ Simple Banck Account Managment  kata for
 ### Kata User Stories
 ##### User Storie 1:
 In order to save money
-As a** bank client
+As a bank client
 I want to make a deposit in my account
 
 ##### User Storie 2:
